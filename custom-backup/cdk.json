@@ -47,6 +47,10 @@
     "imageGenerationModelIds": [
       "amazon.nova-canvas-v1:0"
     ],
+    "videoGenerationModelIds": [],
+　　"hiddenUseCases": {},
+　　"flows": [],
+　　"mcpEnabled": false,
     "endpointNames": [],
     "agentEnabled": false,
     "agentRegion": "ap-northeast-1",
