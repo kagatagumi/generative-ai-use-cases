@@ -33,7 +33,6 @@
     "samlAuthEnabled": true,
     "samlCognitoDomainName": "kagata-genu.auth.ap-northeast-1.amazoncognito.com",
     "samlCognitoFederatedIdentityProviderName": "HENNGE",
-    "samlCognitoFederatedIdentityProviderName": "",
     "modelRegion": "us-east-1",
     "modelIds": [
       "us.amazon.nova-2-lite-v1:0",
