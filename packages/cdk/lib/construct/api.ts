@@ -129,18 +129,11 @@ export class Api extends Construct {
     const customAgentsJson = JSON.stringify(props.customAgents);
 
     // Validate Model Names
-　　for (const model of modelIds) {
-　　  if (
-　　    !BEDROCK_TEXT_MODELS.includes(model.modelId) &&
-　　    ![
-　　      'anthropic.claude-sonnet-4-6',
-　　      'anthropic.claude-opus-4-6',
-　　      'anthropic.claude-haiku-4-5',
-　　    ].includes(model.modelId)
-　　  ) {
-　　    throw new Error(`Unsupported Model Name: ${model.modelId}`);
-　　  }
-　　}
+    for (const model of modelIds) {
+      if (!BEDROCK_TEXT_MODELS.includes(model.modelId)) {
+        throw new Error(`Unsupported Model Name: ${model.modelId}`);
+      }
+    }
     for (const model of imageGenerationModelIds) {
       if (!BEDROCK_IMAGE_GEN_MODELS.includes(model.modelId)) {
         throw new Error(`Unsupported Model Name: ${model.modelId}`);
