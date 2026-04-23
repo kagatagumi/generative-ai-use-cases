@@ -34,23 +34,23 @@
     "samlCognitoDomainName": "",
     "samlCognitoFederatedIdentityProviderName": "",
     "modelRegion": "us-east-1",
-
-"defaultModelId": "anthropic.claude-sonnet-4-6",
-"modelIds": [
-  "anthropic.claude-sonnet-4-6",
-  "anthropic.claude-opus-4-6",
-  "anthropic.claude-haiku-4-5",
-
-  "amazon.nova-micro-v1:0",
-  "amazon.nova-lite-v1:0",
-  "amazon.nova-pro-v1:0",
-
-  "openai.gpt-oss-120b-1:0",
-  "google.gemma-3-27b-it"
+    "modelIds": [
+    "anthropic.claude-sonnet-4-6",
+    "anthropic.claude-opus-4-6",
+    "anthropic.claude-haiku-4-5",
+    "amazon.nova-micro-v1:0",
+    "amazon.nova-lite-v1:0",
+    "amazon.nova-pro-v1:0",
+    "openai.gpt-oss-120b-1:0",
+    "google.gemma-3-27b-it"
 ],
     "imageGenerationModelIds": [
       "amazon.nova-canvas-v1:0"
     ],
+    "videoGenerationModelIds": [],
+　　"hiddenUseCases": {},
+　　"flows": [],
+　　"mcpEnabled": false,
     "endpointNames": [],
     "agentEnabled": false,
     "agentRegion": "ap-northeast-1",
