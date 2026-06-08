@@ -70,16 +70,36 @@ export const implicitFilters: MetadataAttributeSchema[] = [
 // Filter not shown to user (i.e. application level permission, pool tenant)
 // Define filters that are not shown to user (i.e. application level permission, pool tenant)
 export const hiddenStaticExplicitFilters: RetrievalFilter[] = [
+  // Example 1: Filter by data classification
+  // {
+  //   notIn: {
+  //     key: 'classification',
+  //     value: ['secret'],
+  //   },
+  // },
+  // Example 2: Filter by tenant
+  // {
+  //   equals: {
+  //     key: 'tenant',
+  //     value: 'tenant1',
+  //   },
+  // },
   // Customize Here
-  // 資料種別
+];
+
+// User Defined Explicit Filter
+// Filter shown to user on application
+// Define filters that user can select on the application
+// The sample file (packages/cdk/rag-docs/docs) defines the metadata.json accordingly.
+export const userDefinedExplicitFilters: ExplicitFilterConfiguration[] = [
   {
-  key: 'category',
-  type: 'STRING',
-  options: [
-    { value: '安全衛生情報', label: '安全衛生情報' },
-    { value: '就業規則', label: '就業規則' },
-    { value: '決裁規程', label: '決裁規程' }
-  ],
-  description: '資料種別',
-},
+    key: 'category',
+    type: 'STRING',
+    options: [
+      { value: '安全衛生情報', label: '安全衛生情報' },
+      { value: '就業規則', label: '就業規則' },
+      { value: '決裁規程', label: '決裁規程' },
+    ],
+    description: '資料種別',
+  },
 ];
