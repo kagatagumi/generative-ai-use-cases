@@ -97,7 +97,7 @@ export const userDefinedExplicitFilters: ExplicitFilterConfiguration[] = [
     type: 'STRING',
     options: [
       { value: '安全衛生情報', label: '安全衛生情報' },
-      { value: '就業規則', label: '就業規則' },
+      { value: '人事規則', label: '人事規則' },
       { value: '決裁規程', label: '決裁規程' },
     ],
     description: '資料種別',
