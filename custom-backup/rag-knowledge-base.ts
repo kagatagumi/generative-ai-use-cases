@@ -99,6 +99,8 @@ export const userDefinedExplicitFilters: ExplicitFilterConfiguration[] = [
       { value: '安全衛生情報', label: '安全衛生情報' },
       { value: '人事規則', label: '人事規則' },
       { value: '決裁規程', label: '決裁規程' },
+      { value: '情報セキュリティ', label: '情報セキュリティ' },
+      { value: 'DXテスト', label: 'DXテスト' },
     ],
     description: '資料種別',
   },
